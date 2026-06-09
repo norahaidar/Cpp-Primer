@@ -1,0 +1,39 @@
+int main()
+{
+  return 0;
+}
+
+Running the Compiler in the Command Line (Windows)
+- assume our main program is in a file name prog1.cc
+
+$ prog1
+$ .\prog1
+
+Running the Compiler in the Command Line (UNIX)
+
+$ a.out
+$.\a.out
+
+Issuing echo command:
+
+UNIX:
+$ echo $? 
+
+Windows:
+$ echo %ERRORLEVEL%
+
+Running the GNU or Microsoft Compilers:
+$ g++ -o prog1.cc
+Here, $ is the system prompt. The -o prog1 is an argument to the compiler and names the file in which to put the executable file.
+The command line generates an executable file named prog1 or prog1.exe, depending on the OS. 
+On UNIX, executable files have no suffixl on Windows, the suffix is .exe. If -o is omitted, the compiler generates an executable named
+a.out on UNIX systems and a.exe on Windows. 
+
+C:\Users\me]Programs >c1 /EHsc prog1.cpp
+
+is the system prompt and \Users\me\Programs is the name of the current directory (aka the current folder).
+The c1 command invokes the compiler and /EHsc is the compiler option that turns on stnadard exception handling.
+
+Compilers usually include options to generate warnings about problematic constructs.
+Our preference is to use -Wall with the GNU compiler and /W4 with the Microsoft compilers
+
