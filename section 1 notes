@@ -1,3 +1,5 @@
+1.1 Writing a simple C++ program
+
 int main()
 {
   return 0;
@@ -36,4 +38,29 @@ The c1 command invokes the compiler and /EHsc is the compiler option that turns 
 
 Compilers usually include options to generate warnings about problematic constructs.
 Our preference is to use -Wall with the GNU compiler and /W4 with the Microsoft compilers
+
+1.2 A first look at IO
+
+* C++ language does not define any statements to do input or output (IO)
+* C++ includes an extensive standard library that provides IO
+* iostream library --> istream and ostream
+
+A stream is a sequence of characters read from or written to an IO device.
+The term stream is intended to suggest that the characters are generated, or consumed, sequentially over time.
+
+Standard IO objects
+* Defines 4 IO objects
+* cin --> standard input
+* cout --> standard output
+* cerr --> standard error
+* clog --> general info about the execution of the program
+
+
+
+
+
+
+
+
+
 
